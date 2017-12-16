@@ -34,7 +34,7 @@ When the player presses E, a timer by event starts. We check if weight is higher
 ## 2. Food Functionality
 In order for the player to gain weight, food needs to be sucked. There are two types of food in the game: regular food and food source. Regular food gets sucked by the player, adds weight, and disappears. Food sources continously add weight to the player without disappearing. Although they share the same blueprint class, they are differentiated by the boolean 'isSource'. This variable is exposed in the editor so that every instance of the class can be set to either regular or source.
 
-# 2.1 Function GainWeight
+### 2.1 Function GainWeight
 Regardless of the type of food the player gets, the function 'GainWeight' is always called:
 
 
