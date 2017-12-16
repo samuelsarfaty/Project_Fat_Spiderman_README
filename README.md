@@ -67,6 +67,12 @@ Every frame, we check if 'beingSucked' has been set to true by the player. If so
 
 Once the food reaches the player, an overlap event first checks if the food has collided with the player's root component. If so, we then cast to the player blueprint.
 
+![food overlap 2](https://user-images.githubusercontent.com/32599151/34074010-75d2d50e-e29e-11e7-8734-e9a2309b8940.png)
+
+Then, we check if the player's weight is less than 1 and if the food is not a source. If both conditions are met, then the gaining weight sequence is executed and the food is destroyed.
+
+
+
 
 
 
