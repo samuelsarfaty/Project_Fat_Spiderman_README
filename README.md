@@ -21,9 +21,7 @@ As soon as the function is called, the values of all the values of all the afore
 Given that these two functions are closely related, whenever UpdateWeightStatus is called, UpdateAbilities should be called right after to avoid conflicts between states and character properties. I decided to keep both functions separate to keep the blueprints neater, albeit I would have to remember to always call both functions together. I might refactor this code to join them in the future.
 
 ### 1.3 Shedding Weight
-
 The next feature of the player was losing weight on a key press. For this, I first made a simple function called LoseWeight. This function takes a float 'loseRate' as argument. Weight is then reduced by 'loseRate'.
-
 
 ![loseweight](https://user-images.githubusercontent.com/32599151/34073217-a69d8718-e28c-11e7-84c5-4b4c4a2a09bc.png)
 
@@ -32,6 +30,18 @@ Then, a keypress sequence was added in the Event Graph to lose weight:
 ![lose weight on mouse press](https://user-images.githubusercontent.com/32599151/34073224-d1eb01ac-e28c-11e7-86c6-82ae35123da8.png)
 
 When the player presses E, a timer by event starts. We check if weight is higher than 0. If so, we call the 'LoseWeight' function, followed by 'UpdateWeightStatus' which takes the new weight as argument, and then 'UpdateAbilities' which takes the return value of 'UpdateWeightStatus' as argument. This sequence is runs for as long as the E key remains pressed.
+
+## 2. Food Functionality
+In order for the player to gain weight, food needs to be sucked. There are two types of food in the game: regular food and food source. Regular food gets sucked by the player, adds weight, and disappears. Food sources continously add weight to the player without disappearing. Although they share the same blueprint class, they are differentiated by the boolean 'isSource'. This variable is exposed in the editor so that every instance of the class can be set to either regular or source.
+
+# 2.1 Function GainWeight
+Regardless of the type of food the player gets, the function 'GainWeight' is always called:
+
+
+
+
+
+
 
 
 
