@@ -44,6 +44,17 @@ In order for the player to gain weight, food needs to be sucked. There are two t
 This function works in the opposite way than 'Lose Weight'. We take a float 'weightToGain' as argument and we add that number to the current weight.
 
 ### 2.1 Food Sources
+Food sources increase the player's weight for as long as the player is aiming at the food souce and right click is held down. The logic is shown in the player's blueprint:
+
+![rightclick](https://user-images.githubusercontent.com/32599151/34073823-9e331486-e29a-11e7-97c2-8b95a86dcfb8.png)
+
+When the right mouse button is clicked, we first check that weight is lower than 1. We do this so that the player is not allowed to keep sucking food if the weight is at the maximum point. Then, we cast to the blueprint of the aimed food actor (the aiming mechanic was implemented by another team member). After casting, we check if the food is source. If so, and while right click is being held, the food source will call the functions 'GainWeight', 'UpdateWeightStatus', and 'Update abilities' continuously. The cycle stops when the right mouse button is released.
+
+If, after right clicking, the aimed food is not a source, then we set the variable 'beingSucked' to true inside the food blueprint. This functionality will be explained in the next section.
+
+### 2.2 Normal Foods
+Every food blueprint has the following 'MoveToPlayer' function:
+
 
 
 
