@@ -7,6 +7,7 @@ My first task on the project was to develop the weight system for the player. Th
 To start working on the system, I made two variables: weight(float) and weightStatus(enum).
 
 ### Function UpdateWeightStatus
+![update weight stauts](https://user-images.githubusercontent.com/32599151/34072969-58752b62-e288-11e7-8b74-4e469447715a.png)
 
 
 
