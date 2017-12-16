@@ -63,6 +63,12 @@ This function takes the position of the food, player, and interpolates between t
 
 Every frame, we check if 'beingSucked' has been set to true by the player. If so, the food will move towards the player.
 
+![food overlap 1](https://user-images.githubusercontent.com/32599151/34073980-c8854f44-e29d-11e7-9e77-4906011812ea.png)
+
+Once the food reaches the player, an overlap event first checks if the food has collided with the player's root component. If so, we then cast to the player blueprint.
+
+
+
 
 
 
