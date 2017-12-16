@@ -59,6 +59,12 @@ Every food blueprint has the following 'MoveToPlayer' function:
 
 This function takes the position of the food, player, and interpolates between the two at the speed set by the argument.
 
+![food tick](https://user-images.githubusercontent.com/32599151/34073962-8d53a52e-e29d-11e7-9194-bf75b56a940f.png)
+
+Every frame, we check if 'beingSucked' has been set to true by the player. If so, the food will move towards the player.
+
+
+
 
 
 
