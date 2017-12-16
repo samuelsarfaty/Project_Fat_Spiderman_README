@@ -29,6 +29,11 @@ The next feature of the player was losing weight on a key press. For this, I fir
 
 Then, a keypress sequence was added in the Event Graph to lose weight:
 
+![lose weight on mouse press](https://user-images.githubusercontent.com/32599151/34073224-d1eb01ac-e28c-11e7-86c6-82ae35123da8.png)
+
+When the player presses E, a timer by event starts. We check if weight is higher than 0. If so, we call the 'LoseWeight' function, followed by 'UpdateWeightStatus' which takes the new weight as argument, and then 'UpdateAbilities' which takes the return value of 'UpdateWeightStatus' as argument. This sequence is runs for as long as the E key remains pressed.
+
+
 
 
 
