@@ -55,6 +55,13 @@ If, after right clicking, the aimed food is not a source, then we set the variab
 ### 2.2 Normal Foods
 Every food blueprint has the following 'MoveToPlayer' function:
 
+![move to player](https://user-images.githubusercontent.com/32599151/34073869-d3e8c390-e29b-11e7-8368-01791ddd6c3c.png)
+
+This function takes the position of the food, player, and interpolates between the two at the speed set by the argument.
+
+
+
+
 
 
 
