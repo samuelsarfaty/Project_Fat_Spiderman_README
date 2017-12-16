@@ -25,6 +25,12 @@ Given that these two functions are closely related, whenever UpdateWeightStatus 
 The next feature of the player was losing weight on a key press. For this, I first made a simple function called LoseWeight. This function takes a float 'loseRate' as argument. Weight is then reduced by 'loseRate'.
 
 
+![loseweight](https://user-images.githubusercontent.com/32599151/34073217-a69d8718-e28c-11e7-84c5-4b4c4a2a09bc.png)
+
+Then, a keypress sequence was added in the Event Graph to lose weight:
+
+
+
 
 
 
