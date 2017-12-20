@@ -81,6 +81,38 @@ Next, we store the current weight of the player and then destroy the player. We 
 
 ![2](https://user-images.githubusercontent.com/32599151/34216894-99adc122-e5a1-11e7-8bdc-2ae05676bd9c.png)
 
+## 4. Checkpoints and Respawning
+
+The respawn system is handled in the GameMode blueprint. This seems appropriate as the GameMode is a persistent object across different levels. The respawn blueprint has two variables: startPosition and lastCheckpointLocation. The position at which the player is respawned will depend on the values of these variables.
+
+### 4.1 Checkpoints
+
+![checkpoint](https://user-images.githubusercontent.com/32599151/34217987-e2d2fc8e-e5a4-11e7-9c52-4ed86d9622ae.png)
+
+The checkpoint actor has a collider which checks for collisions with the player. If the player touches this collider, then we cast to the GameMode and assign the value of lastCheckpointLocation to the checkpoint's position. This way, whenever the player reaches a new checkpoint, the value of lastCheckpointLocation is overwritten.
+
+### 4.2 Respawn System
+
+![1](https://user-images.githubusercontent.com/32599151/34217454-7566b128-e5a3-11e7-8b92-b528ae0cd853.png)
+
+On start, we use the blueprint to store the player's starting position. From then onwards, we wait until the OnDestroyedEvent is called. This event is called whenever the player is destroyed; i.e. when he collides with the Death Box. Once the player is destroyed, we wait one second and the rest of the sequence is executed.
+
+![2](https://user-images.githubusercontent.com/32599151/34217584-bca79b6a-e5a3-11e7-9b10-dd98f6eefcd3.png)
+
+After the delay, we need to assess the right location for the player to respawn at. if lastCheckPointLocation is null, meaning that the player never collided with a checkpoint, then we respawn the player at the startPosition. If the player did collide with a checkpoint, then he will be respawned at lastCheckpointPosition.
+
+![3](https://user-images.githubusercontent.com/32599151/34217769-458b9440-e5a4-11e7-981b-48a2ccdd0eb7.png)
+
+Then, once the player is respawned, we take the value of weightAtDeath which was taken when the player died and we reasing it to the player. Otherwise, the player would be respawned with the default weight. Lastly, we use this weight value to update the status and abilities accordingly.
+
+It was also important to make sure that the player spawns looking in the right direction. If they respawn facing backwards, then that might confuse the player. I noticed that the player always respawns at the specified location looking down the checkpoint's local X axis. Therefore, I aligned the checkpoint's flag with actor's X axis, which gives us control over the player's rotation upon respawning.
+
+![flag](https://user-images.githubusercontent.com/32599151/34218482-32515e76-e5a6-11e7-9f6d-8cae4dcf9473.png)
+
+
+
+
+
 
 
 
