@@ -1,4 +1,4 @@
-# Project Fat Spiderman - Personal contributions.
+# Project Fat Spiderman - Personal Contributions.
 By Samuel Sarfaty - 33506853
 
 ## 1. The player's weight system
@@ -70,6 +70,17 @@ Once the food reaches the player, an overlap event first checks if the food has 
 ![food overlap 2](https://user-images.githubusercontent.com/32599151/34074010-75d2d50e-e29e-11e7-8734-e9a2309b8940.png)
 
 Then, we check if the player's weight is less than 1 and if the food is not a source. If both conditions are met, then the gaining weight sequence is executed and the food is destroyed.
+
+## 3. Death Box
+
+The death box is a simple collider which can be placed next to traps. The first function of the deathbox is to detect collisions with the player.
+
+![1](https://user-images.githubusercontent.com/32599151/34216823-623433ac-e5a1-11e7-9194-9880967eb6a6.png)
+
+Next, we store the current weight of the player and then destroy the player. We store the weight value because when the player respawns, we want them to have the same weight as they did before dying.
+
+![2](https://user-images.githubusercontent.com/32599151/34216894-99adc122-e5a1-11e7-8bdc-2ae05676bd9c.png)
+
 
 
 
