@@ -107,6 +107,12 @@ It was also important to make sure that the player spawns looking in the right d
 
 ![flag](https://user-images.githubusercontent.com/32599151/34218482-32515e76-e5a6-11e7-9f6d-8cae4dcf9473.png)
 
+Afterwards, the checkpoint model was improved. It now has a red emissive material that turns green when the player activates the checkpoint. I also added a sound cue as part of the activation sequence.
+
+![audio](https://user-images.githubusercontent.com/32599151/34307527-7e5c5a3c-e740-11e7-85cb-202243897c01.png)
+
+![last flag](https://user-images.githubusercontent.com/32599151/34307533-864c96e4-e740-11e7-98d2-4dd289ab6006.png)
+
 
 
 
