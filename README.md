@@ -115,6 +115,35 @@ Afterwards, the checkpoint model was improved. It now has a red emissive materia
 
 ![last flag](https://user-images.githubusercontent.com/32599151/34307533-864c96e4-e740-11e7-98d2-4dd289ab6006.png)
 
+## 5. User Interface
+
+![ui](https://user-images.githubusercontent.com/32599151/34908676-5bb97936-f88b-11e7-96f2-361e89c54cfe.png)
+
+The UI of the game consists of only a few elements: First, a progress bar which shows the player's weight as a continuous variable. A weight icon is placed to the left of the bar to symolize that the bar's fill represents weight. Then, the hexagonal symbols on top of the reflect the player's weight status (Light, Normal, or Heavy).
+
+### 5.1 The Progress Bar
+
+The progress bar comes as part of Unreal's UI system. A binding is necessary in order to connect the player's weight with the amount of fill in the bar.
+
+
+![scrollbar binding](https://user-images.githubusercontent.com/32599151/34908731-41029c5c-f88c-11e7-97fd-a4d735203e72.png)
+
+The progress bar ranges from 0 to 1, and the value of the player's weight also spans across this range. Therefore, the weight value was applied to the bar without needing any conversions.
+
+### 5.2 Weight Status Symbols
+
+Each hexagonal symbol was bound independently to the player's weight status. This way, whenever the player is in a specific status, the appropriate symbol would be displayed and the other two would be given an alpha of 0. This caused the inactive symbols to 'disappear' from the screen.
+
+In the blueprint below, if weight status is normal, then the image will not be opaque. Otherwise, it will be transparent.
+
+![image binding](https://user-images.githubusercontent.com/32599151/34908777-2e2d169c-f88d-11e7-880a-5e1800d68f07.png)
+
+This causes the following behavior in-game:
+
+![hexagonal symbol](https://user-images.githubusercontent.com/32599151/34908804-d09512c2-f88d-11e7-9878-e957422f6630.png)
+
+
+
 
 
 
