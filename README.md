@@ -186,6 +186,51 @@ This script uses a vector3 variable and checks for displacement. If the variable
 ![autogenerate wall 2](https://user-images.githubusercontent.com/32599151/34909078-ca110e1a-f892-11e7-8f57-df6c47c8bdf2.png)
 ![final](https://user-images.githubusercontent.com/32599151/34909097-0be79c8c-f893-11e7-84bb-209fa9703bdc.png)
 
+## 3. Pipes
+
+The pipes were split into 3 pieces: The body of the pipe, turns, and mouth.
+
+![basic](https://user-images.githubusercontent.com/32599151/34909165-bc6acaca-f893-11e7-9708-a226417ee4dc.png)
+![mouth](https://user-images.githubusercontent.com/32599151/34909166-bc7d9b96-f893-11e7-86be-d7bb705486c0.png)
+![turn 1](https://user-images.githubusercontent.com/32599151/34909167-bc903076-f893-11e7-86fc-7abba7779e23.png)
+
+
+![pipe mouth uv](https://user-images.githubusercontent.com/32599151/34909181-f944209a-f893-11e7-94de-e8e4b4d387ce.png)
+![pipe straight uv](https://user-images.githubusercontent.com/32599151/34909182-f956b8e0-f893-11e7-8b6c-ca99092e22d3.png)
+![pipe turn uv](https://user-images.githubusercontent.com/32599151/34909183-f96a141c-f893-11e7-822a-777fdf7ff678.png)
+
+
+Every piece has the same radius so that they can all fit each other perfectly. The straight pipe was given a similar script to the wall panels, so that it would be easy to add fitting pipe pieces to the scene. Then pipes were assembled to make it seems as if the food comes from there.
+
+![final](https://user-images.githubusercontent.com/32599151/34909289-2e14beb8-f896-11e7-9926-484253c2a4fa.png)
+
+## 4. Wall Lights
+
+The wall lights were made to simulate fluorescent lighting across the walls. Using the wall panels as reference, I started with half a cylinder and then added detail.
+
+![wall light 1](https://user-images.githubusercontent.com/32599151/34909310-b38d85ca-f896-11e7-8c83-3ad5975fafdc.png)
+![wall light 2](https://user-images.githubusercontent.com/32599151/34909311-b3a07a40-f896-11e7-8c4f-e3f6b98a32bd.png)
+
+The walls were also used to set a reference for the pivot point of the lights. It was made in such way that if the light is located in the same spot as the wall, the mesh of the light would be at the top of the wall. Also, the center of the light was given an emissive material to simluate the lighting in the lab.
+
+![light uv](https://user-images.githubusercontent.com/32599151/34909422-85f189ac-f898-11e7-85f6-f1588c09e87a.png)
+
+![wall light material](https://user-images.githubusercontent.com/32599151/34909427-b5c83e8c-f898-11e7-8473-b0fa77b8bfcf.png)
+
+# Part III - Personal Role and Experience
+
+From the beginning, my role along with Michael, was of team manager. This was mostly because we were the only two programmers in the team and we both had previous experience making games. Therefore, we were able to determine which ideas were feasible for the amount of time that we had.
+
+The main idea to manage the project was to divide the team into two: programming and art. Each team would do the most difficult tasks of their discipline and then leave a few, simpler tasks left for the other team to do. However, this system did not prove fruitful as one of the teams needed constant guidance. Therfore, we decided to meet every week and assign weekly, individual tasks to everyone. This framework ended up being better for the team and almost everyone was able to achieve their weekly goals consistently.
+
+Personally, managing this project has emphazised the importance of using everyone's strengths instead of trying to improve their weaknesses. Many team memebers are great artists, but since it is required for eveyone to do a bit of everything, they were very intimidated by the programming tasks. We spent an exaggerated amount of time going over source control and we continued to experience technical difficulties throughout the entire project. These delays mainly caused us to not be able to do all the features that we wanted for the game. If everyone would have been able to do what they are good at, we probably wouldn't have had so many bumps throughout the project.
+
+Nevertheless, working in a team also has had positive outcomes. By making the design process democratic, we were able to come up with collective ideas which were better than our personal ones. This also helped keep the team motiviated as implementing everyone's ideas gave people a sense of ownership of the game. Morevoer, some team members were very much in synchrony with each other, so we were able to make good progress in a relatively short amount of time.
+
+Overall, working in a team throughout the entire process of making a game has been a very enlighting experience. As team manager, one always tries to keep the team engaged and excited about the project. However, this can't always be the case and we need to learn how to work effectively with the team, regardless of their experience and strengths.
+
+
+
 
 
 
