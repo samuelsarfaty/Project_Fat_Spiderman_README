@@ -160,6 +160,37 @@ For the pole, I simply stretched a sylinder and made some loop cuts across. This
 
 ![edges on pole](https://user-images.githubusercontent.com/32599151/34908982-42172fb8-f891-11e7-9aa4-2c4cbf2a55b3.png)
 
+![checkpoint](https://user-images.githubusercontent.com/32599151/34909001-7b25deb2-f891-11e7-84c1-c6c168a0c6bd.png)
+
+![last flag](https://user-images.githubusercontent.com/32599151/34307533-864c96e4-e740-11e7-98d2-4dd289ab6006.png)
+
+## 2. Wall Panels
+
+The wall panels were 400cm by 200cm cubes. The initial model had the outside corners bent, but this idea was later discarded because the corners had a strange effect on the lighting of the scene.
+
+![wall basic](https://user-images.githubusercontent.com/32599151/34909024-19bbec7e-f892-11e7-9d0c-2adcc63bf732.png)
+
+The square versions were kept as they were more coherent with the scene.
+
+![panel basic preview](https://user-images.githubusercontent.com/32599151/34909036-3fa53242-f892-11e7-9955-1da8a3a9f8e8.png)
+
+![wall panel uv](https://user-images.githubusercontent.com/32599151/34909037-3fbaf80c-f892-11e7-9fdb-4d996650121f.png)
+
+Once imported in Unreal, the next task was to find a way of building the walls using the panels efficiently. Therefore, I created a blueprint and added the following construction script.
+
+![autogenerate script](https://user-images.githubusercontent.com/32599151/34909055-7ec7f22a-f892-11e7-92a7-1276f93c7c5a.png)
+
+This script uses a vector3 variable and checks for displacement. If the variable is far enough from the panel, it spawns a new panel along the right axis. With this in place, building walls was just a matter of creating rows and stacking them on top of each other.
+
+![autogenerate wall 1](https://user-images.githubusercontent.com/32599151/34909077-c9fd6964-f892-11e7-86cd-430a8e523e9c.png)
+![autogenerate wall 2](https://user-images.githubusercontent.com/32599151/34909078-ca110e1a-f892-11e7-8f57-df6c47c8bdf2.png)
+![final](https://user-images.githubusercontent.com/32599151/34909097-0be79c8c-f893-11e7-84bb-209fa9703bdc.png)
+
+
+
+
+
+
 
 
 
