@@ -134,13 +134,33 @@ The progress bar ranges from 0 to 1, and the value of the player's weight also s
 
 Each hexagonal symbol was bound independently to the player's weight status. This way, whenever the player is in a specific status, the appropriate symbol would be displayed and the other two would be given an alpha of 0. This caused the inactive symbols to 'disappear' from the screen.
 
-In the blueprint below, if weight status is normal, then the image will not be opaque. Otherwise, it will be transparent.
+In the blueprint below, if weight status is normal, then the image will be opaque. Otherwise, it will be transparent.
 
 ![image binding](https://user-images.githubusercontent.com/32599151/34908777-2e2d169c-f88d-11e7-880a-5e1800d68f07.png)
 
 This causes the following behavior in-game:
 
 ![hexagonal symbol](https://user-images.githubusercontent.com/32599151/34908804-d09512c2-f88d-11e7-9878-e957422f6630.png)
+
+# Part II Modelling
+
+## 1. Checkpoint
+
+I started by making the base out of a cylinder and insetting edges. Then, I beveled the edges to make them smoother
+
+![base 2](https://user-images.githubusercontent.com/32599151/34908950-bf1fa6ee-f890-11e7-836b-3b8a653b5ea1.png)
+
+![base bevelled](https://user-images.githubusercontent.com/32599151/34908952-c46d2482-f890-11e7-95cb-90cf19ebe96e.png)
+
+The flag started as a thin cube with a few loop cuts. I then contracted one side and pused the middle of the opposite side to make it look more like a flag
+
+![flag cut](https://user-images.githubusercontent.com/32599151/34908969-160a4d92-f891-11e7-93ce-3e195a6260a9.png)
+
+For the pole, I simply stretched a sylinder and made some loop cuts across. This was done to create more faces which would later be assigned an emissive material.
+
+![edges on pole](https://user-images.githubusercontent.com/32599151/34908982-42172fb8-f891-11e7-9aa4-2c4cbf2a55b3.png)
+
+
 
 
 
