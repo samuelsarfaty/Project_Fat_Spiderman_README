@@ -172,7 +172,7 @@ The wall panels were 400cm by 200cm cubes. The initial model had the outside cor
 
 The square versions were kept as they were more coherent with the scene.
 
-![panel basic preview](https://user-images.githubusercontent.com/32599151/34909036-3fa53242-f892-11e7-9955-1da8a3a9f8e8.png)
+![panel basic](https://user-images.githubusercontent.com/32599151/34909137-6e53325a-f893-11e7-9f2e-ce1be1482341.png)
 
 ![wall panel uv](https://user-images.githubusercontent.com/32599151/34909037-3fbaf80c-f892-11e7-9fdb-4d996650121f.png)
 
