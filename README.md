@@ -221,9 +221,9 @@ The walls were also used to set a reference for the pivot point of the lights. I
 
 The purpose of the lasers was to put them along the floor and other areas that would kill the player. First I started by making the model with a similar style to the wall panels.
 
+![base](https://user-images.githubusercontent.com/32599151/34918362-6a0a52f8-f949-11e7-8554-cc99c99a0687.png)
 ![finished](https://user-images.githubusercontent.com/32599151/34918360-69dee1f4-f949-11e7-9b27-934bf919e84e.png)
 ![laser uv](https://user-images.githubusercontent.com/32599151/34918361-69f53aa8-f949-11e7-994d-09caf92cba4d.png)
-![base](https://user-images.githubusercontent.com/32599151/34918362-6a0a52f8-f949-11e7-8554-cc99c99a0687.png)
 
 The edges of the pyramids and the sphere at the top were given an emissive material.
 
