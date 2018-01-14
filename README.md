@@ -217,6 +217,22 @@ The walls were also used to set a reference for the pivot point of the lights. I
 
 ![wall light material](https://user-images.githubusercontent.com/32599151/34909427-b5c83e8c-f898-11e7-8473-b0fa77b8bfcf.png)
 
+## 5. Lasers
+
+The purpose of the lasers was to put them along the floor and other areas that would kill the player. First I started by making the model with a similar style to the wall panels.
+
+![finished](https://user-images.githubusercontent.com/32599151/34918360-69dee1f4-f949-11e7-9b27-934bf919e84e.png)
+![laser uv](https://user-images.githubusercontent.com/32599151/34918361-69f53aa8-f949-11e7-994d-09caf92cba4d.png)
+![base](https://user-images.githubusercontent.com/32599151/34918362-6a0a52f8-f949-11e7-8554-cc99c99a0687.png)
+
+The edges of the pyramids and the sphere at the top were given an emissive material.
+
+![import](https://user-images.githubusercontent.com/32599151/34918368-94b51826-f949-11e7-8c4b-f0c4914da64b.png)
+
+Then, I created a particle system which would look like a laser beam. The system uses takes two objects as targets and draws the beam along the pivot points of both objects. Therefore, I moved the pivot point of the pyramid to the sphere on top. This way, a realistic laser beam was achieved.
+
+![laserdone](https://user-images.githubusercontent.com/32599151/34918394-f2c0b466-f949-11e7-80e2-ae0a05c2340c.png)
+
 # Part III - Personal Role and Experience
 
 From the beginning, my role along with Michael, was of team manager. This was mostly because we were the only two programmers in the team and we both had previous experience making games. Therefore, we were able to determine which ideas were feasible for the amount of time that we had.
