@@ -152,11 +152,11 @@ I started by making the base out of a cylinder and insetting edges. Then, I beve
 
 ![base bevelled](https://user-images.githubusercontent.com/32599151/34908952-c46d2482-f890-11e7-95cb-90cf19ebe96e.png)
 
-The flag started as a thin cube with a few loop cuts. I then contracted one side and pused the middle of the opposite side to make it look more like a flag
+The flag started as a thin cube with a few loop cuts. I then contracted one side and pushed the middle of the opposite side to make it look more like a flag
 
 ![flag cut](https://user-images.githubusercontent.com/32599151/34908969-160a4d92-f891-11e7-93ce-3e195a6260a9.png)
 
-For the pole, I simply stretched a sylinder and made some loop cuts across. This was done to create more faces which would later be assigned an emissive material.
+For the pole, I simply stretched a cylinder and made some loop cuts across. This was done to create more faces which would later be assigned an emissive material.
 
 ![edges on pole](https://user-images.githubusercontent.com/32599151/34908982-42172fb8-f891-11e7-9aa4-2c4cbf2a55b3.png)
 
@@ -200,7 +200,7 @@ The pipes were split into 3 pieces: The body of the pipe, turns, and mouth.
 ![pipe turn uv](https://user-images.githubusercontent.com/32599151/34909183-f96a141c-f893-11e7-822a-777fdf7ff678.png)
 
 
-Every piece has the same radius so that they can all fit each other perfectly. The straight pipe was given a similar script to the wall panels, so that it would be easy to add fitting pipe pieces to the scene. Then pipes were assembled to make it seems as if the food comes from there.
+Every piece has the same radius so that they can all fit each other perfectly. The straight pipe was given a similar script to the wall panels, so that it would be easy to add fitting pipe pieces to the scene. Then pipes were assembled to make it seem as if the food comes from there.
 
 ![final](https://user-images.githubusercontent.com/32599151/34909289-2e14beb8-f896-11e7-9926-484253c2a4fa.png)
 
@@ -211,7 +211,7 @@ The wall lights were made to simulate fluorescent lighting across the walls. Usi
 ![wall light 1](https://user-images.githubusercontent.com/32599151/34909310-b38d85ca-f896-11e7-8c83-3ad5975fafdc.png)
 ![wall light 2](https://user-images.githubusercontent.com/32599151/34909311-b3a07a40-f896-11e7-8c4f-e3f6b98a32bd.png)
 
-The walls were also used to set a reference for the pivot point of the lights. It was made in such way that if the light is located in the same spot as the wall, the mesh of the light would be at the top of the wall. Also, the center of the light was given an emissive material to simluate the lighting in the lab.
+The walls were also used to set a reference for the pivot point of the lights. It was made in such way that if the light is located in the same spot as the wall, the mesh of the light would be at the top of the wall panel. Also, the center of the light was given an emissive material to simluate the lighting in the lab.
 
 ![light uv](https://user-images.githubusercontent.com/32599151/34909422-85f189ac-f898-11e7-85f6-f1588c09e87a.png)
 
