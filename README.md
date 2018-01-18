@@ -229,6 +229,8 @@ The walls were also used to set a reference for the pivot point of the lights. I
 
 ![wall light material](https://user-images.githubusercontent.com/32599151/34909427-b5c83e8c-f898-11e7-8473-b0fa77b8bfcf.png)
 
+![wall lights](https://user-images.githubusercontent.com/32599151/35112005-a0724552-fc74-11e7-84e5-9bf312c0d54a.png)
+
 ## 5. Lasers
 
 The purpose of the lasers was to put them along the floor and other areas that would kill the player. First I started by making the model with a similar style to the wall panels.
