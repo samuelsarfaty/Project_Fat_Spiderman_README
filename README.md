@@ -1,7 +1,14 @@
 # Project Fat Spiderman - Personal Contributions.
 By Samuel Sarfaty - 33506853
 
-# Part I - Programming
+# Part I - Game Concept
+The first idea behind Fat Spiderman was to create a game in which the player would swing around as a way to navigate through the world. Later, as an additional layer of fun, we decided to use a weight system which would affect the player's movement. For this, we had to come up with certain abilities that each weight would have, and have those abilities work in synchrony with the swinging mechanic. As we brainstormed, we began to associate the abilities with a sort of comedic game (i.e. being fat allows you to smash walls or being light allows you to float around).
+
+Once the core mechanics were ideated, we started thinking of a theme. We knew that we wouldn't have much time to program everything and make an incredible world. Therefore, we decided to keep the world as simple as possible and focus on getting the mechanics right. For this reason, we opted to go with a 'lab' environment, given that those are normally not too complex to build. We mainly used Portal as a source of inspiration for this world.
+
+Over the next sections, I have reported my personal contributions to the project in programming and modelling, as well as detailing my experience of working with this team.
+
+# Part II - Programming
 
 ## 1. The player's weight system
 My first task on the project was to develop the weight system for the player. The weight system works in three layers: first, there is a continuous variable with a range from 0 to 1 which determines the player's weight. Second, there are 3 states that the player can have depending on the value of the first variable: light, normal, and heavy. Lastly, according to the status, the player will have different movement properties and abilities.
@@ -31,7 +38,7 @@ Then, a keypress sequence was added in the Event Graph to lose weight:
 
 ![lose weight on mouse press](https://user-images.githubusercontent.com/32599151/34073224-d1eb01ac-e28c-11e7-86c6-82ae35123da8.png)
 
-When the player presses E, a timer by event starts. We check if weight is higher than 0. If so, we call the 'LoseWeight' function, followed by 'UpdateWeightStatus' which takes the new weight as argument, and then 'UpdateAbilities' which takes the return value of 'UpdateWeightStatus' as argument. This sequence is runs for as long as the E key remains pressed.
+When the player presses E, a timer by event starts. We check if weight is higher than 0. If so, we call the 'LoseWeight' function, followed by 'UpdateWeightStatus' which takes the new weight as argument, and then 'UpdateAbilities' which takes the return value of 'UpdateWeightStatus' as argument. This sequence runs for as long as the E key remains pressed.
 
 ### 1.4 Function GainWeight
 Regardless of the type of food the player gets, the function 'GainWeight' is always called:
@@ -70,6 +77,8 @@ Once the food reaches the player, an overlap event first checks if the food has 
 ![food overlap 2](https://user-images.githubusercontent.com/32599151/34074010-75d2d50e-e29e-11e7-8734-e9a2309b8940.png)
 
 Then, we check if the player's weight is less than 1 and if the food is not a source. If both conditions are met, then the gaining weight sequence is executed and the food is destroyed.
+
+The normal foods, even though they were the original thought on how to gain weight, were not used in the game to allow a more fluid gameplay. Hence, we only used food sources.
 
 ## 3. Death Box
 
@@ -142,7 +151,10 @@ This causes the following behavior in-game:
 
 ![hexagonal symbol](https://user-images.githubusercontent.com/32599151/34908804-d09512c2-f88d-11e7-9878-e957422f6630.png)
 
-# Part II Modelling
+The symbols work in two ways in order to effectively communicate to the player their weight status. Not only does the color change with each status, but the amount of fill in the hexagon increases with the weight. This way, we could ensure that the player understands their weight.
+
+
+# Part III Modelling
 
 ## 1. Checkpoint
 
@@ -229,11 +241,11 @@ The edges of the pyramids and the sphere at the top were given an emissive mater
 
 ![import](https://user-images.githubusercontent.com/32599151/34918368-94b51826-f949-11e7-8c4b-f0c4914da64b.png)
 
-Then, I created a particle system which would look like a laser beam. The system uses takes two objects as targets and draws the beam along the pivot points of both objects. Therefore, I moved the pivot point of the pyramid to the sphere on top. This way, a realistic laser beam was achieved.
+Then, I created a particle system which would look like a laser beam. The system takes two objects as targets and draws the beam along the pivot points of both objects. Therefore, I moved the pivot point of the pyramid to the sphere on top. This way, a realistic laser beam was achieved.
 
 ![laserdone](https://user-images.githubusercontent.com/32599151/34918394-f2c0b466-f949-11e7-80e2-ae0a05c2340c.png)
 
-# Part III - Personal Role and Experience
+# Part IV - Personal Role and Experience
 
 From the beginning, my role along with Michael, was of team manager. This was mostly because we were the only two programmers in the team and we both had previous experience making games. Therefore, we were able to determine which ideas were feasible for the amount of time that we had.
 
